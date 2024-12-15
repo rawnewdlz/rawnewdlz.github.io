@@ -22,12 +22,17 @@
 -->
 <html lang="en">
   <head>
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-Q4NX73QZ4K"></script>
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-Q4NX73QZ4K"
+    ></script>
     <script>
       window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'G-Q4NX73QZ4K');
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "G-Q4NX73QZ4K");
     </script>
     <meta name="robots" content="noindex, nofollow" />
     <meta charset="UTF-8" />
@@ -75,11 +80,6 @@ ______________________________*/
       body {
         font-size: 1.6rem;
       }
-      header {
-        background: #f8e6c4;
-        padding: 0;
-        margin: 0;
-      }
       header,
       section,
       footer {
@@ -101,12 +101,6 @@ ______________________________*/
         font-size: 1.8rem;
         font-weight: 500;
         margin-bottom: 0;
-      }
-
-      header h4 {
-        font-size: 1.1rem;
-        padding: 0px;
-        margin: 0 0 50px;
       }
 
       h5 {
@@ -151,10 +145,10 @@ ______________________________*/
       li a {
         color: #fff;
         display: block;
-        font-size: 1.2rem;
+        font-size: 1.4rem;
         background: #aa6f73;
         width: max-content;
-        padding: 4px 8px;
+        padding: 8px 20px;
         border-radius: 2px;
         text-decoration: none;
       }
@@ -162,11 +156,11 @@ ______________________________*/
         background: #906568;
       }
 
-      @media (min-width: 576px) {
+      /* @media (min-width: 576px) {
         header h2 {
           width: 50%;
         }
-      }
+      } */
 
       /* FONT */
       .poppins-thin {
@@ -197,7 +191,288 @@ ______________________________*/
         font-style: normal;
       }
 
+      header {
+        background: url(imgs/header_bg_waves.svg) bottom left #f8e6c4 repeat-x;
+        padding-bottom: 80px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        /* width: 100%; */
+        margin: 0;
+      }
 
+      header h4 {
+        font-size: 1.1rem;
+        padding: 0px;
+        margin: 0 0 50px;
+      }
+      .hi_there,
+      .profile {
+        display: flex;
+        flex-direction: column;
+        flex-basis: 100%;
+        flex: 1 1 0%;
+      }
+      .hi_there {
+        max-width: 60%;
+      }
+      .profile {
+        position: relative;
+        max-width: 40%;
+      }
+
+      .he_who_him {
+        background: url("imgs/he_who_him.png") 0 0 no-repeat;
+        z-index: 1;
+        top: 120px;
+        left: 100px;
+      }
+
+      .profile .border {
+        background: url("imgs/header_profile_border.svg") 0 0 no-repeat
+          transparent;
+        z-index: 2;
+        top: 100px;
+        left: 120px;
+      }
+
+      .profile .border,
+      .profile .he_who_him {
+        width: 345px;
+        height: 465px;
+        background-size: 80%;
+        position: absolute;
+      }
+
+      .border {
+        top: 100px;
+        left: 120px;
+      }
+      .snek {
+        height: 50px;
+        background: #f8e6c4;
+        overflow: hidden;
+      }
+
+      #sneks {
+        color: black;
+        background: red;
+      }
+
+      #snek {
+        stroke: #aa6f73;
+      }
+
+      .hearto {
+        color: #e90606;
+        margin: 0 3px;
+        display: inline-block;
+        animation: pound 0.35s infinite alternate;
+        -webkit-animation: pound 0.35s infinite alternate;
+      }
+      @-webkit-keyframes pound {
+        to {
+          transform: scale(1.1);
+        }
+      }
+
+      @keyframes pound {
+        to {
+          transform: scale(1.1);
+        }
+      }
+
+      .rainbow:hover {
+        -webkit-animation: rainbow 1s infinite;
+        -ms-animation: rainbow 1s infinite;
+        -o-animation: rainbow 1s infinite;
+        animation: rainbow 1s infinite;
+        cursor: default;
+      }
+
+      @-webkit-keyframes rainbow {
+        0% {
+          color: #ff0000;
+        }
+
+        10% {
+          color: #ff8000;
+        }
+
+        20% {
+          color: #ffff00;
+        }
+
+        30% {
+          color: #80ff00;
+        }
+
+        40% {
+          color: #00ff00;
+        }
+
+        50% {
+          color: #00ff80;
+        }
+
+        60% {
+          color: #00ffff;
+        }
+
+        70% {
+          color: #0080ff;
+        }
+
+        80% {
+          color: #0000ff;
+        }
+
+        90% {
+          color: #8000ff;
+        }
+
+        100% {
+          color: #ff0080;
+        }
+      }
+
+      @-ms-keyframes rainbow {
+        0% {
+          color: #ff0000;
+        }
+
+        10% {
+          color: #ff8000;
+        }
+
+        20% {
+          color: #ffff00;
+        }
+
+        30% {
+          color: #80ff00;
+        }
+
+        40% {
+          color: #00ff00;
+        }
+
+        50% {
+          color: #00ff80;
+        }
+
+        60% {
+          color: #00ffff;
+        }
+
+        70% {
+          color: #0080ff;
+        }
+
+        80% {
+          color: #0000ff;
+        }
+
+        90% {
+          color: #8000ff;
+        }
+
+        100% {
+          color: #ff0080;
+        }
+      }
+
+      @-o-keyframes rainbow {
+        0% {
+          color: #ff0000;
+        }
+
+        10% {
+          color: #ff8000;
+        }
+
+        20% {
+          color: #ffff00;
+        }
+
+        30% {
+          color: #80ff00;
+        }
+
+        40% {
+          color: #00ff00;
+        }
+
+        50% {
+          color: #00ff80;
+        }
+
+        60% {
+          color: #00ffff;
+        }
+
+        70% {
+          color: #0080ff;
+        }
+
+        80% {
+          color: #0000ff;
+        }
+
+        90% {
+          color: #8000ff;
+        }
+
+        100% {
+          color: #ff0080;
+        }
+      }
+
+      @keyframes rainbow {
+        0% {
+          color: #ff0000;
+        }
+
+        10% {
+          color: #ff8000;
+        }
+
+        20% {
+          color: #ffff00;
+        }
+
+        30% {
+          color: #80ff00;
+        }
+
+        40% {
+          color: #00ff00;
+        }
+
+        50% {
+          color: #00ff80;
+        }
+
+        60% {
+          color: #00ffff;
+        }
+
+        70% {
+          color: #0080ff;
+        }
+
+        80% {
+          color: #0000ff;
+        }
+
+        90% {
+          color: #8000ff;
+        }
+
+        100% {
+          color: #ff0080;
+        }
+      }
 
       /*
       li{ position: relative;}
@@ -222,17 +497,94 @@ header {background: linear-gradient(-45deg, #4a195b 20%, #b52986 0 40%, #fd648d 
       
       
       */
+
+      .more_triangles {
+        background: url("imgs/triangle.png") no-repeat 0 0;
+        display: block;
+        position: absolute;
+        top: 140px;
+        left: 70px;
+        width: 16px;
+        height: 16px;
+      }
+
+      .more_triangles::before {
+        content: "";
+        background: url("imgs/triangle.png") no-repeat 0 0;
+        display: block;
+        position: relative;
+        top: 25px;
+        left: 0px;
+        width: 16px;
+        height: 16px;
+        display: block;
+      }
+      .more_triangles::after {
+        content: "";
+        background: url("imgs/triangle.png") no-repeat 0 0;
+        display: block;
+        position: relative;
+        top: 34px;
+        left: 0px;
+        width: 16px;
+        height: 16px;
+        display: block;
+      }
+
+      .even_more_triangles {
+        background: url("imgs/triangle.png") no-repeat 0 0;
+        display: block;
+        position: absolute;
+        top: 400px;
+        left: 410px;
+        width: 16px;
+        height: 16px;
+        transform: rotate(180deg);
+      }
+
+      .even_more_triangles::before {
+        content: "";
+        background: url("imgs/triangle.png") no-repeat 0 0;
+        display: block;
+        position: relative;
+        top: 25px;
+        left: 0px;
+        width: 16px;
+        height: 16px;
+        display: block;
+      }
+      .even_more_triangles::after {
+        content: "";
+        background: url("imgs/triangle.png") no-repeat 0 0;
+        display: block;
+        position: relative;
+        top: 34px;
+        left: 0px;
+        width: 16px;
+        height: 16px;
+        display: block;
+      }
     </style>
   </head>
 
   <body>
     <header>
-      <h4>&#9728; Jason DeLosSantos | mini portfolio</h4>
-      <h5>Front-End Developer &amp; UX Designer</h5>
-      <h2>
-        Hi, I'm Jason DeLosSantos,<br />
-        a creative problem-solver with over a decade of experience across diverse sectors, from Pharma to Philanthropy. I specialize in bringing ideas to life through web development and design.
-      </h2>
+      <div class="hi_there">
+        <h4>&#9728; Jason DeLosSantos | mini portfolio</h4>
+        <h5>Front-End Developer &amp; UX Designer</h5>
+        <h2>
+          Hi, I'm Jason DeLosSantos,<br />
+          a creative problem-solver with over a decade of experience across
+          diverse sectors, from Pharma to Philanthropy. I specialize in bringing
+          ideas to life through web development and design.
+        </h2>
+      </div>
+      <div class="profile">
+        <div class="border"></div>
+        <div class="he_who_him whos_that_brown"></div>
+        <span class="more_triangles"></span>
+        <span class="even_more_triangles"></span>
+      </div>
     </header>
     <section>
       <h5>Check out some of my most recent collaborations</h5>
@@ -242,10 +594,15 @@ header {background: linear-gradient(-45deg, #4a195b 20%, #b52986 0 40%, #fd648d 
         <li>
           <span>Design &amp; Code</span>
           <span class="cms">WordPress</span>
+          <span class="launched">&#127881; Launched: July 2024</span>
           <h3>Warren Electric</h3>
           <p>
-            Collaborated with a client from wireframe, design, and development
-            to build their Electrician site.
+            I had the pleasure of working closely with a certified electrician
+            based in New Hampshire to create a custom website that truly
+            reflects their unique services. From the very beginning, we
+            collaborated every step of the way—starting with wireframing and
+            design, all the way through to development—to ensure the final
+            product met their specific needs and exceeded expectations.
           </p>
           <a href="https://warrenelectricllc.com" target="_blank">view site</a>
         </li>
@@ -253,7 +610,13 @@ header {background: linear-gradient(-45deg, #4a195b 20%, #b52986 0 40%, #fd648d 
         <li>
           <span>Code</span>
           <h3>CyberGrants Login</h3>
-          <p>The login page to the saas internal user interface.</p>
+          <p>
+            This is the login page for the internal user interface of the SaaS
+            platform, which serves as a powerful tool for philanthropic
+            organizations. Used by Fortune 100 and Fortune 500 companies
+            worldwide, this platform helps streamline and enhance their
+            charitable efforts with ease and efficiency.
+          </p>
           <a href="https://www.cybergrants.com/login/CGLogin" target="_blank"
             >view site</a
           >
@@ -263,8 +626,9 @@ header {background: linear-gradient(-45deg, #4a195b 20%, #b52986 0 40%, #fd648d 
           <span>Design &amp; Code</span>
           <h3>Front Door - Nonprofit Organization Login</h3>
           <p>
-            The "Front Door" project allows Nonprofits to view all their grant
-            applications across multiple companies in one place.
+            FrontDoor is a portal that gives nonprofit administrators the
+            ability to access their grant applications from all of the corporate
+            websites in one location.
           </p>
           <a
             href="https://www.cybergrants.com/pls/cybergrants/ao_login.login?x_gm_id=1&x_proposal_type_id=9019"
@@ -278,8 +642,10 @@ header {background: linear-gradient(-45deg, #4a195b 20%, #b52986 0 40%, #fd648d 
           <span>Design &amp; Code</span>
           <h3>Template Builder</h3>
           <p>
-            I'm proud of this tool, it successfully cut down development time
-            from two weeks to one hour. It only uses HTML, CSS, & jQuery.
+            The builder tool constructs a custom template in just a few clicks,
+            making it easy for non-technical users to build a site in minutes.
+            I'm proud of this tool because it successfully cut down development
+            time from two weeks to less than an hour.
           </p>
           <a
             href="https://stg.cybergrants.com/prototype/aotemp/"
@@ -292,16 +658,21 @@ header {background: linear-gradient(-45deg, #4a195b 20%, #b52986 0 40%, #fd648d 
           <span>Design &amp; Code</span>
           <span class="cms">WordPress</span>
           <h3>Fitness Appeal</h3>
-          <p>I currently volunteer maintaining this site.</p>
+          <p>
+            I currently volunteer here leading website management. Additionally,
+            I design marketing materials, handle troubleshooting and ensure
+            cross-browser compatibility across devices.
+          </p>
           <a href="https://fitnessappeal.com/" target="_blank">view site</a>
         </li>
 
         <li>
           <span>Design &amp; Code</span>
           <span class="cms">WordPress</span>
+          <span class="launched">&#127881; Launched: July 2024</span>
           <h3>Keys Behavioral Health</h3>
           <p>
-            Launched in July 2024, I worked on and maintained the site using
+            I collaborated with an agency to build and maintain the site using
             HTML, CSS, PHP, JavaScript, and WordPress.
           </p>
           <a href="https://keysbh.com/" target="_blank">view site</a>
@@ -310,9 +681,12 @@ header {background: linear-gradient(-45deg, #4a195b 20%, #b52986 0 40%, #fd648d 
         <li>
           <span>Code</span>
           <span class="cms">SquareSpace</span>
+          <span class="launched">&#127881; Launched: October 2024</span>
           <h3>The OuterFace</h3>
           <p>
-            Updated their Work page with gifs and looped videos to bring more life to their portfolio.
+            I collaborated with this unique Boston-based agency to update their
+            work page with custom features to bring more life to their
+            portfolio.
             <!-- 
             I also had the opportunity to work on a fun concept for Holy Cross where a visitor would use their mobile device to view hidden art and messages on a wall covered with purple designs. It's the same idea as using red & blue 3D glasses.
             <a href="https://jasondelossantos/outerface/" target="_blank">view site</a>
@@ -320,20 +694,18 @@ header {background: linear-gradient(-45deg, #4a195b 20%, #b52986 0 40%, #fd648d 
           </p>
           <a href="https://theouterface.com/work" target="_blank">view site</a>
         </li>
-<!-- 
-        <li>
-          <span>Code</span>
-          <h3>Granicus</h3>
-          <p>
-            I had the privilege to build forms for a coding test. All they shared was a word doc with a pixelated image of form fields and I used that to build out a page.
-          </p>
-          <a href="https://jasondelossantos.com/granicus" target="_blank">view site</a>
-        </li>
--->
       </ul>
     </section>
     <footer>
-      <p>Jason DeLosSantos - © Copyright 2024. All Rights Reserved.</p>
+      <p>
+        Made with <span class="hearto">❤</span> by
+        <span class="rainbow">Jason DeLosSantos</span> - © Copyright
+        <span id="year">2024</span>. All Rights Reserved.
+      </p>
     </footer>
+
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
   </body>
 </html>
