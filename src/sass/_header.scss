@@ -1,0 +1,112 @@
+/* HEADER ISH */
+header {
+    background: url('../imgs/header_bg_waves.svg') bottom left var(--lightColor) repeat-x;
+    padding-bottom: 80px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    /* width: 100%; */
+    margin: 0;
+
+    h4 {
+        font-size: 1.1rem;
+        padding: 0px;
+        margin: 0 0 50px;
+    }
+
+    .hi_there, 
+    .profile {
+        max-width: 100%;
+        display: block;
+        width: 100%;
+
+        @media (min-width: 992px) {
+            &{
+                display: flex;
+                flex-direction: column;
+                flex-basis: 100%;
+                flex: 1 1 0%;
+            }
+        }
+    }
+}
+// Medium devices (tablets, 992px and up)
+@media (min-width: 992px) {
+        .hi_there {
+            max-width: 60%;
+        }
+
+        .profile {
+            position: relative;
+            max-width: 40%;
+
+            .border {
+                background: url('../imgs/header_profile_border.svg') 0 0 no-repeat transparent;
+                z-index: 2;
+                top: 100px;
+                left: 120px;
+            }
+
+            .border,
+            .he_who_him {
+                width: 345px;
+                height: 465px;
+                background-size: 80%;
+                position: absolute;
+            }
+        }
+
+        .he_who_him {
+            background: url('../imgs/he_who_him.png') 0 0 no-repeat;
+            z-index: 1;
+            top: 120px;
+            left: 100px;
+        }
+
+
+    .more_triangles, .more_triangles::before, .more_triangles::after, 
+    .even_more_triangles, .even_more_triangles::before, .even_more_triangles::after {
+        background: url('../imgs/triangle.png') no-repeat 0 0;
+        display: block;
+        height: 16px;
+        width: 16px;
+    }
+    .more_triangles, .even_more_triangles {
+        position: absolute;
+    
+        &::before, &::after {
+            position: relative;
+        }
+    }
+    .more_triangles {
+        top: 140px;
+        left: 70px;
+        }
+    .more_triangles::before {
+        content: "";
+        top: 25px;
+        left: 0px;
+    }
+    .more_triangles::after {
+        content: "";
+        top: 34px;
+        left: 0px;
+    }
+    
+    .even_more_triangles {
+        top: 400px;
+        left: 410px;
+        transform: rotate(180deg);
+        }
+    
+    .even_more_triangles::before {
+        content: "";
+        top: 25px;
+        left: 0px;
+    }
+    .even_more_triangles::after {
+        content: "";
+        top: 34px;
+        left: 0px;
+    }
+}

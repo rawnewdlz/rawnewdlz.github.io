@@ -1,0 +1,59 @@
+
+/* FONT */
+.poppins-thin {
+  font-family: 'Poppins', serif;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.poppins-regular,
+body,
+h5 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.poppins-semibold,
+header h4,
+h2 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.poppins-bold {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+p {
+  font-size: 1.4rem;
+  font-weight: normal;
+}
+header h2 {
+  font-size: 3.2rem;
+  color: var(--text);
+  width: 100%;
+  margin: 10px 0 24px;
+}
+
+h3 {
+  font-size: 1.8rem;
+  font-weight: 500;
+  margin-bottom: 0;
+}
+
+h5 {
+  font-size: 1.4rem;
+  color: #66545e;
+  margin: 24px 0 5px;
+}
+
+footer {
+  font-size: 1.1rem;
+}
+
+footer p {
+  font-size: 1.1rem;
+}
